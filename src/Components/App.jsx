@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import SearchBar from './Components/SearchBarh'
-import ImageList from './Components/ImagenList'
+import SearchBar from './components/SearchBar'
+import ImageList from './components/ImageList'
 import searchImage from './api'
 import './App.css'
-
 
 
 
@@ -18,18 +17,14 @@ function App() {
     console.log(result)
   
     setImages(result)
-
-  }
-
-
   return (
     <div>
-      <i><h2>Pictures2</h2></i>
+      <h1>App</h1>
       <SearchBar onSubmit={handleSubmit}/>
       <ImageList images={images}/>
     </div>
   )
 }
-
+}
 
 export default App

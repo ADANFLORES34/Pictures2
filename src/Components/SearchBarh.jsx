@@ -23,9 +23,9 @@ const handleClick = () => {
 
    return (
    <div className= "search-bar">
-    <h1> Search Bar</h1>
+    <i><h2> Barra de busqueda</h2></i>
     <form onSubmit={handleFormSubmit}>
-        confirma tu busqueda: {term}
+        <b>Confirma tu busqueda: {term}</b>
         <input onChange={handleChange} value={term}/>
         </form>
         <button onClick={handleClick}>Buscar </button>

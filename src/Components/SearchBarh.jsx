@@ -1,5 +1,5 @@
-import {usestate } from "react"
-import './SerachBar.css'
+import { useState } from "react"
+import './SearchBar.css'
 
 function SearchBar ({onSubmit}) {
 const [term, setTerm] = useState ('')
@@ -7,7 +7,7 @@ const [term, setTerm] = useState ('')
 const handleFormSubmit  = (event) => {
     event.preventDefault()
     console.log('Necesito decirle al componente padre sobre los datos')
-    onSubmit(Term)
+    onSubmit(term)
 }
 
 
@@ -18,7 +18,7 @@ const handleChange = (event) => {
 
 }
 const handleClick = () => {
-     onSubmit(Term)
+     onSubmit(term)
 }
 
    return (
@@ -28,7 +28,7 @@ const handleClick = () => {
         confirma tu busqueda: {term}
         <input onChange={handleChange} value={term}/>
         </form>
-        <button onClick={handleClick}>Click Me! </button>
+        <button onClick={handleClick}>Buscar </button>
 
         </div>
         )

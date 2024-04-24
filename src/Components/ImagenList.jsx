@@ -1,5 +1,5 @@
 import ImageShow from './ImageShow'
-
+import './ImagenList.css'
 function ImageList({ images }){
     
 
@@ -8,7 +8,7 @@ function ImageList({ images }){
     })
 
     return ( 
-        <div> 
+        <div className='image-list'> 
             {renderImage}
             </div>
     

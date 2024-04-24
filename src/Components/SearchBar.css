@@ -1,4 +1,4 @@
-.search-Bar {
+.search-bar {
 
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -6,7 +6,7 @@
 
 }
 
-.search-bar from {
+.search-bar form {
 
     display: flex;
     flex-direction: column;
